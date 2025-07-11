@@ -1,6 +1,8 @@
 Generic Pan Tilt Firmware
 =========================
 
+This repository contains the firmware source files for the Generic Pan Tilt. The firmware is currently built with PlatformIO using an RP2040 Arduino core and FreeRTOS.
+
 ## Build instructions
 1. [Install PlatformIO](https://docs.platformio.org/en/latest/core/installation/index.html)
 2. `git clone --recursive https://github.com/mitmedialab/generic-pan-tilt-firmware.git`
