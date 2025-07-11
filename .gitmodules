@@ -1,0 +1,3 @@
+[submodule "lib/TMC-API"]
+	path = lib/TMC-API
+	url = https://github.com/DaAwesomeP/TMC-API.git
