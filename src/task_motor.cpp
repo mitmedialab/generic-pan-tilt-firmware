@@ -1006,7 +1006,7 @@ uint32_t tmc2540_home_y(TaskMotor_motor_addr_t motorAddr) {
   tmc5240_writeRegister(motorAddr, TMC5240_VMAX, 300000);
   tmc5240_writeRegister(motorAddr, TMC5240_VMAX, 100000);
   size_t timeout_ms = 0;
-  while (tmc5240_fieldRead(motorAddr, TMC5240_EVENT_STOP_SG_FIELD) == 0 && timeout_ms < 3000) {
+  while (tmc5240_fieldRead(motorAddr, TMC5240_EVENT_STOP_SG_FIELD) == 0 && timeout_ms < 500) {
     vTaskDelay(1 / portTICK_PERIOD_MS);
     timeout_ms++;
   }
